@@ -1,0 +1,8 @@
+
+footer {
+    background-color: blue;
+    position:fixed;  /*If i remove this it goes up again, how come?*/
+    bottom:0;  /*Footer to the bottom*/
+    padding: 10px;
+    width: 100%;
+}

@@ -3,34 +3,11 @@
     padding: 0;
 }
 
-body {
-    display: flex; /* Using flex instead of grid here, as header, main, footer is one dimensional */
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 header {
     /*grid-area: header;*/
     background-color: red;
     text-align: center;
     position: fixed;
-    width: 100%;
-    /*z-index: 999; placér forrest/øverst */
-}
-
-main{
-    /*grid-area: main;*/
-    background-color: green;
-    flex: 1;
-    padding: 10px;
-}
-
-footer {
-    /*grid-area: footer;*/
-    background-color: blue;
-    position:fixed;  /*If i remove this it goes up again, how come?*/
-    bottom:0;  /*Footer to the bottom*/
-    padding: 10px;
     width: 100%;
 }
 
@@ -69,7 +46,6 @@ footer {
 .menu_button_icon span::after{
     top:7px;
 }
-
 
 nav{
     position: absolute;
