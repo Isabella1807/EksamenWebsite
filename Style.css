@@ -29,7 +29,9 @@ header {
     /*grid-area: header;*/
     background-color: red;
     text-align: center;
-    /*height: 100px;*/
+    position: fixed;
+    width: 100%;
+    /*z-index: 999; placér forrest/øverst */
 }
 
 main{
@@ -39,6 +41,10 @@ main{
     padding: 10px;
 }
 
+img ~ p {
+    background-color: yellow;
+}
+
 footer {
     /*grid-area: footer;*/
     background-color: blue;
@@ -46,12 +52,52 @@ footer {
     bottom:0;  /*Footer to the bottom*/
     padding: 10px;
     width: 100%;
-    /*padding: 8px;*/
 }
 
-/*nav{
+#toggle_menu {
+    display:none;
+}
+
+.menu_button_icon{
+    position:absolute;
+    top: 0;
+    left:0;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.menu_button_icon span,
+.menu_button_icon span::before,
+.menu_button_icon span::after {
+    display: block;
+    background-color: pink;
+    height: 4px;
+    width: 2em;
+    border-radius: 4px;
+    position: relative;
+}
+.menu_button_icon span::before,
+.menu_button_icon span::after {
+    content: '';
+    position: absolute;
+}
+.menu_button_icon span::before{
+    bottom:7px;
+}
+.menu_button_icon span::after{
+    top:7px;
+}
+
+
+nav{
+    position: absolute;
     background-color: yellow;
     display:none;
+    width: 100%;
+    text-align: left;
 }
 
 li{
@@ -67,9 +113,10 @@ li a:hover{
     color: gray;
 }
 
-.toggle:checked ~ nav {
-
-}*/
+#toggle_menu:checked + nav { /* ~ = tilde, vælger alle søskende til nav. + vælger alle nav direkte efter toggle*/
+    background-color: blue;
+    display: block;
+}
 
 /*Hover effect?*/
 
