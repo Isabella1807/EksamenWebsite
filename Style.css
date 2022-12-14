@@ -1,34 +1,80 @@
-body, html{
+* {
     margin: 0;
     padding: 0;
+}
+
+body, html{
+    /*min-height: 100vh;*/
     /*Removes the white spate around my elements*/
     /*er der en grund til at skrive html?*/
 }
 
+body {
+    display: flex; /* Using flex instead of grid here, as header, main, footer is one dimensional */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .container {
     background-color: darkolivegreen;
-    display:grid;
-    grid-template-areas:
-    'header header header'
-    'main main main'
-    'footer footer footer';
+    /*display:grid;*/
+    /*grid-template-areas:*/
+    /*'header header header'*/
+    /*'main main main'*/
+    /*'footer footer footer';*/
+    /*height: 100vh;*/
 }
 
 header {
+    /*grid-area: header;*/
     background-color: red;
-    grid-area: header;
+    text-align: center;
+    /*height: 100px;*/
 }
 
 main{
+    /*grid-area: main;*/
     background-color: green;
-    grid-area: main;
+    flex: 1;
+    padding: 10px;
 }
 
-footer{
+footer {
+    /*grid-area: footer;*/
     background-color: blue;
-    grid-area: footer;
     position:fixed;  /*If i remove this it goes up again, how come?*/
     bottom:0;  /*Footer to the bottom*/
+    padding: 10px;
     width: 100%;
-    padding: 8px;
+    /*padding: 8px;*/
+}
+
+/*nav{
+    background-color: yellow;
+    display:none;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: gray;
+}
+
+.toggle:checked ~ nav {
+
+}*/
+
+/*Hover effect?*/
+
+@media only screen and (min-width: 600px) { /*Når skærmen bliver mindst 600px ændres baggrunden*/
+    .container {
+        background-color: lightblue;
+    }
 }
