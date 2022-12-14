@@ -65,7 +65,6 @@ footer {
     margin-left: 1em;
     display: flex;
     align-items: center;
-    border: 1px solid black;
     height: 100%;
 }
 
@@ -98,6 +97,7 @@ nav{
     display:none;
     width: 100%;
     text-align: left;
+    top: 100%;
 }
 
 li{
