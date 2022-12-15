@@ -18,14 +18,14 @@ header {
 .menu_button_icon{
     position:absolute;
     top: 0;
-    left:0;
-    margin-left: 1em;
+    right:0;
+    margin-right: 1em;
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.menu_button_icon span,
+.menu_button_icon span,                     /*I dunno what all this means*/
 .menu_button_icon span::before,
 .menu_button_icon span::after {
     display: block;
@@ -40,7 +40,7 @@ header {
     content: '';
     position: absolute;
 }
-.menu_button_icon span::before{
+.menu_button_icon span::before{    /*Laver de to sidste streger i burgermenuen*/
     bottom:7px;
 }
 .menu_button_icon span::after{
@@ -52,7 +52,7 @@ nav{
     background-color: yellow;
     display:none;
     width: 100%;
-    text-align: left;
+    text-align: right;
     top: 100%;
 }
 

@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+/*
 .img_container {
-    /*border: 5px solid yellow;*/
+    !*border: 5px solid yellow;*!
 }
 
 .gallery{
@@ -12,9 +12,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
-}
+}*/
 
 
+
+/*
 .img1 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -27,4 +29,27 @@
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
+}*/
+
+.gallery article {
+    display: flex;
 }
+
+.gallery article .img_container {
+    flex: 1;
+}
+
+.gallery article .img_container img {
+    width: 100%;
+}
+
+.gallery article .text_container {
+    flex: 2;
+}
+
+.gallery article:nth-child(2n) { /* tag fat i hver anden article html tag */
+    flex-flow: row-reverse;
+    text-align: right;
+}
+
+
