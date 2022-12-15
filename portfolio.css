@@ -33,6 +33,7 @@
 
 .gallery article {
     display: flex;
+    background-color: blue;
 }
 
 .gallery article .img_container {
