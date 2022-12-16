@@ -4,8 +4,8 @@
 }
 
 .gallery article {
+    padding-top: 20px;
     display: flex;
-    background-color: blue;
 }
 
 .gallery article .img_container {
@@ -14,10 +14,15 @@
 
 .gallery article .img_container img {
     width: 100%;
+    border: 5px solid #bf9228;
+    border-radius: 5%;
 }
 
 .gallery article .text_container {
     flex: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f5f6e5;
 }
 
 .gallery article:nth-child(2n) { /* tag fat i hver anden article html tag */
