@@ -2,34 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/*
-.img_container {
-    !*border: 5px solid yellow;*!
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
-}*/
-
-
-
-/*
-.img1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.img1 {
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}*/
 
 .gallery article {
     display: flex;
