@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 header {
     /*grid-area: header;*/
@@ -37,7 +33,7 @@ header {
 }
 .menu_button_icon span::before,
 .menu_button_icon span::after {
-    content: '';
+    content: '';  /*ellers er de ikke synlige*/
     position: absolute;
 }
 .menu_button_icon span::before{    /*Laver de to sidste streger i burgermenuen*/
@@ -70,6 +66,37 @@ li a:hover{
 }
 
 #toggle_menu:checked + nav { /* ~ = tilde, vælger alle søskende til nav. + vælger alle nav direkte efter toggle*/
-    background-color: blue;
     display: block;
+}
+
+@media screen and (min-width:800px) {
+    .menu_button_icon{
+        display:none;
+    }
+
+    header{
+        display:flex;
+    }
+    header h1{
+        margin-left: 20px;
+    }
+
+    nav{
+        display: block;
+        position: absolute;
+        top: 25%;
+        width: 50%;
+        right: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav li {
+        display: inline-block;
+        text-align: center;
+    }
+
 }
