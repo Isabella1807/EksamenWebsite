@@ -7,7 +7,7 @@ body {
     display: flex; /* Using flex instead of grid here, as header, main, footer is one dimensional */
     flex-direction: column;
     min-height: 100vh;
-    background-color: #142005;
+    background-color: #0B1308;
 }
 
 main {

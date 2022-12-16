@@ -1,22 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
+
+
+
+
+
+
+
+
+
+
+
+.centerpiece{
+    font-size: 50px;
+    text-align: center;
+    color: #bf9228;
 }
 
-body {
-    display: flex; /* Using flex instead of grid here, as header, main, footer is one dimensional */
-    flex-direction: column;
-    min-height: 100vh;
+img {
+    border-radius: 50%;
+    border: 5px solid #bf9228;
 }
 
-main{
-    background-color: green;
-    flex: 1;
-    padding: 10px;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 500px;
+    margin-top: 50px;
 }
 
-@media only screen and (min-width: 600px) { /*Når skærmen bliver mindst 600px ændres baggrunden*/
-    .container {
-        background-color: lightblue;
+@media screen and (min-width:900px) {
+    .centerpiece{
+        font-size: 80px;
     }
 }
