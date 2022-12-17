@@ -1,18 +1,13 @@
 .whole .information {
-    display: inline-block;
     font-size: 30px;
-    position:relative;
-    bottom: 30px;
     padding-left: 50px;
-    text-align: left;
 }
 .whole h1 {
-    padding: 100px 0; /*10px i top og bund 0 i højre og venstre*/
+    padding: 100px 0; /*100px i top og bund 0 i højre og venstre*/
+    text-align: center;
 }
 .whole{
-    border-radius: 5%;
     color: #f5f6e5;
-    text-align: center;
 }
 
 img {
@@ -29,12 +24,24 @@ img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    display: inline-block;
     border: 5px solid #bf9228;
     position: relative;
     z-index: -1; /*ellers går den over min header?*/
 }
 
-.padding {
-    padding: 20px 0;
+table {
+    text-align: left;
+    margin: auto;
 }
+
+td {
+    padding-bottom: 20px;
+}
+
+
+@media screen and (min-width:900px) {
+    .whole h1{
+        font-size: 80px;
+    }
+}
+
