@@ -1,0 +1,25 @@
+p {
+    padding-top: 30px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.whole{
+    border-radius: 5%;
+    color: #f5f6e5;
+    text-align: center;
+}
+
+img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+.frame{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 5px solid #bf9228;
+    vertical-align: middle;
+}

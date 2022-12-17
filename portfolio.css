@@ -5,6 +5,7 @@
 
 .gallery article {
     padding-top: 20px;
+    padding-bottom: 50px;
     display: flex;
 }
 
