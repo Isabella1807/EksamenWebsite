@@ -1,9 +1,14 @@
-p {
-    padding-top: 30px;
-    font-size: 20px;
+.whole .information {
     display: inline-block;
+    font-size: 30px;
+    position:relative;
+    bottom: 30px;
+    padding-left: 50px;
+    text-align: left;
 }
-
+.whole h1 {
+    padding: 100px 0; /*10px i top og bund 0 i højre og venstre*/
+}
 .whole{
     border-radius: 5%;
     color: #f5f6e5;
@@ -12,7 +17,12 @@ p {
 
 img {
     width: 70px;
-    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .frame{
@@ -21,5 +31,10 @@ img {
     height: 100px;
     display: inline-block;
     border: 5px solid #bf9228;
-    vertical-align: middle;
+    position: relative;
+    z-index: -1; /*ellers går den over min header?*/
+}
+
+.padding {
+    padding: 20px 0;
 }

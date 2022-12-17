@@ -50,6 +50,7 @@ nav{
     width: 100%;
     text-align: right;
     top: 100%;
+
 }
 
 li{
@@ -69,10 +70,12 @@ li a:hover{
 #toggle_menu:checked + nav { /* ~ = tilde, vælger alle søskende til nav. + vælger alle nav direkte efter toggle*/
     display: block;
     background-color: black;
+    z-index: 999;
 }
 
 header ul {
     padding-right: 10px;
+    z-index: 999;
 }
 
 header a{
