@@ -30,7 +30,6 @@
     flex-flow: row-reverse;
     text-align: right;
 }
-
 @media screen and (min-width:850px) {
     .gallery p{
         font-size: 30px;
