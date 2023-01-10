@@ -23,6 +23,7 @@ h1{
 p{
     color: #f5f6e5;
 }
+
 @media screen and (min-width:800px) {
     main{
         padding: 100px 100px;

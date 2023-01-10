@@ -1,14 +1,19 @@
-.whole .information {
-    font-size: 30px;
-    padding-left: 50px;
-}
-.whole h1 {
-    padding: 100px 0; /*100px i top og bund 0 i højre og venstre*/
+
+.whole{
     text-align: center;
+}
+.frame{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #bf9228;
+    position: relative;
+    z-index: -1; /*ellers går ikonerne over burgermenu drop down menu*/
+    margin: auto;
 }
 
 img {
-    width: 70px;
+    width: 25px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -17,14 +22,35 @@ img {
     margin: auto;
 }
 
-.frame{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 5px solid #bf9228;
-    position: relative;
-    z-index: -1; /*ellers går den over min header?*/
+.information{
+    font-size: 20px;
 }
+
+.whole h1{
+    padding-top: 20px;
+}
+
+.infoblock {
+    padding: 30px 0px;
+}
+
+@media screen and (min-width:850px)   {
+
+    .frame{
+        display: inline-block;
+    }
+
+    .information{
+        display: inline-block;
+    }
+}
+/*
+
+.whole h1 {
+    padding: 100px 0; !*100px i top og bund 0 i højre og venstre*!
+    text-align: center;
+}
+
 
 table {
     text-align: left;
@@ -41,4 +67,6 @@ td {
         font-size: 80px;
     }
 }
+
+*/
 
