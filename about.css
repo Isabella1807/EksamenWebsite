@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-@media screen and (min-width:850px) {
+@media screen and (min-width:1200px) {
     .about_me_text {
         max-width: 40%;
         padding: 0;

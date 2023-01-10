@@ -36,6 +36,11 @@ img {
 
 @media screen and (min-width:850px)   {
 
+    .infocontainer {
+        display: inline-block;
+        text-align: left;
+    }
+
     .frame{
         display: inline-block;
     }
@@ -43,30 +48,22 @@ img {
     .information{
         display: inline-block;
     }
-}
-/*
 
-.whole h1 {
-    padding: 100px 0; !*100px i top og bund 0 i højre og venstre*!
-    text-align: center;
-}
+    .frame{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
 
+    img {
+        width: 50px;
+    }
 
-table {
-    text-align: left;
-    margin: auto;
-}
-
-td {
-    padding-bottom: 20px;
-}
-
-
-@media screen and (min-width:900px) {
     .whole h1{
-        font-size: 80px;
+        padding-top: 20px;
+    }
+    .information{
+        padding-left: 20px;
     }
 }
-
-*/
 
