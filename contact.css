@@ -34,6 +34,15 @@ img {
     padding: 30px 0px;
 }
 
+a:link{
+    text-decoration: none;
+    color: #f5f6e5;
+}
+
+a:hover{
+    text-decoration: underline solid #f5f6e5 2px;
+}
+
 @media screen and (min-width:850px)   {
 
     .infocontainer {
