@@ -18,10 +18,12 @@ main {
 
 main h1{
     color: #bf9228;
+    font-size: 40px;
 }
 
 main p{
     color: #f5f6e5;
+    font-size: 20px;
 }
 
 @media screen and (min-width:800px) {
