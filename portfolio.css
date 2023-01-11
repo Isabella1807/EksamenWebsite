@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.gallery {
-    text-align: center;
-}
+
 .gallery article {
     padding-top: 20px;
     padding-bottom: 70px;
@@ -31,12 +29,6 @@
         flex: 1;
     }
 
-    .gallery p{
-        font-size: 30px;
-    }
-    .gallery h1{
-        font-size: 50px;
-    }
     .gallery article:nth-child(2n) { /*tag fat i hver anden article html tag*/
         flex-flow: row-reverse;
         text-align: right;
