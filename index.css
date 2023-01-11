@@ -29,6 +29,21 @@ img {
     margin-top: 50px;
 }
 
+#visit p{
+    color: rgba(245, 246, 229, 0.3);
+    font-style: italic;
+}
+
+.centerpiece a {
+    text-decoration: none;
+}
+
+#visit:hover p{
+    color: rgba(245, 246, 229, 0.5);
+    text-decoration: underline;
+}
+
+
 @media screen and (min-width:900px) {
     .centerpiece{
         font-size: 80px;

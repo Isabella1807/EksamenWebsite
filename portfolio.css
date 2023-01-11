@@ -5,6 +5,7 @@
 
 .gallery article {
     padding: 50px;
+    text-align: center;
 }
 
 .gallery article .img_container img {
@@ -15,25 +16,27 @@
 
 .gallery article .text_container {
     flex: 2;
+    padding: 20px 20px;
 }
 
 @media screen and (min-width: 800px) {
     .gallery article {
+        text-align: left;
         display: flex;
     }
 
     .gallery article .img_container {
         flex: 1;
-        text-align: center;
     }
 
-    .gallery article:nth-child(2n) { /*tag fat i hver anden article html tag*/
+    .gallery article:nth-of-type(2n) { /*tag fat i hver anden article html tag*/
         flex-flow: row-reverse;
         text-align: right;
     }
 
-    .hrtest{
-        width: 25%;
+    hr {
+        margin: auto;
+        border: 3px solid #f5f6e5;
+        border-radius: 5px;
     }
-
 }
